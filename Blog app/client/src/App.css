@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #222;
+
+  box-sizing: border-box;
+  background: linear-gradient(rgb(57, 123, 118), rgb(216, 182, 182));
+  /* background-color: rgb(98, 132, 121); */
+}
+
+img {
+  max-width: 220%;
+  margin-top: 20px;
+}
+
+main {
+  padding: 10px;
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+
+}
+
+div.post {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 0.9fr 1.1fr; */
+  gap: 15px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 600px) {
+  div.post {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+div.post div.image {
+  width: 45%;
+}
+
+.text h2 {
+  font-size: 1.5 rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.595);
+}
+
+.text h2:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+div.post p.info {
+  margin-top: 0;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.471);
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+div.post p.info a.author {
+  color: rgba(0, 0, 0, 0.826);
+
+}
+
+div.post p.summary {
+  margin: 10px 0;
+}
+
+form.login,
+form.register {
+  margin-top: 175px;
+  margin-bottom: 325px;
+  margin-left: 125px;
+  background: linear-gradient(#00000007, #bf464696);
+  padding: 40px;
+  max-width: 400px;
+}
+
+form.login h1,
+form.register h1 {
+  text-align: center;
+}
+
+div.post-page div.image {
+  max-height: 100%;
+  max-height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+div.post-page a {
+  color: #333;
+  text-decoration: underline;
+}
+
+div.post-page div.image img {
+  object-fit: cover;
+  /* width: auto; */
+  object-position: center center;
+}
+
+input {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  margin: 8px;
+  padding: 5px;
+  padding-left: 15px;
+  border: 0;
+  background-color: #ddddddce;
+}
+
+input:hover {
+  box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.481);
+  /* color: black; */
+  background-color: rgba(34, 106, 82, 0.111);
+}
+
+button {
+  border-radius: 5px;
+  width: 100%;
+  margin-left: 10px;
+  padding: 5px;
+  background-color: rgba(51, 158, 122, 0.438);
+}
+
+button:hover {
+  background-color: rgb(17, 101, 73);
+  color: aliceblue;
+}
+
+div.post-page div.content p {
+  line-height: 1.5rem;
+}
+
+div.edit-row {
+  text-align: right;
+}
+
+div.post-page a.edit-btn {
+  background-color: rgba(0, 0, 0, 0.478);
+  color: white;
+  display: inline-flex;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 5px 5px;
+  /* padding-top: 4px; */
+  border-radius: 7px;
+}
+
+div.post-page a.edit-btn:hover {
+  cursor: pointer;
+  background-color: rgba(4, 36, 17, 0.914);
+}
+
+a svg {
+  height: 18px;
+}
